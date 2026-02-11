@@ -1,0 +1,395 @@
+:root {
+  --rojo: #c62828;
+  --azul: #0d47a1;
+  --negro: #111;
+  --blanco: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: var(--negro);
+  color: var(--blanco);
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  background: url("hero22.jpg");
+  z-index: 100;
+}
+
+.navbar nav a {
+  margin-left: 25px;
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-red {
+  background: var(--rojo);
+  color: white;
+}
+.btn-blue {
+  background: var(--azul);
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: url("hero.jpg") center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 0 6px 20px rgba(0,0,0,.5);
+}
+/* SECCIONES */
+.section {
+  padding: 90px 60px;
+  text-align: center;
+}
+
+.section.dark {
+  background: var(--negro);
+  color: white;
+}
+
+/* ===============================
+   SECCIÓN APRENDE
+================================ */
+
+#aprende {
+  background-image: url("hero22.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: white;
+  position: relative;
+}
+#aprende::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#aprende * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Capa oscura para que el texto se lea bien */
+.aprende::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Ajusta intensidad */
+}
+
+/* Contenido encima del overlay */
+.aprende .overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 40px;
+}
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+}
+
+.card {
+  border: 1px solid var(--azul);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.metodologia {
+  width: 100%;
+}
+
+/* HEADER */
+.met-header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.met-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.met-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* BLOQUES */
+.met-block {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* OVERLAY OSCURO */
+.met-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* CONTENIDO */
+.met-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.met-number {
+  font-size: 3rem;
+  font-weight: bold;
+  opacity: 0.3;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.met-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.met-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.met-block:nth-child(even) .met-content {
+  text-align: left;
+}
+
+.met-block:nth-child(odd) .met-content {
+  text-align: right;
+}
+.met-header {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Overlay oscuro */
+.met-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Contenido encima del overlay */
+.met-header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.met-header-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.met-header-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* BIBLIOTECA */
+.library {
+  background: var(--azul);
+  color: white;
+}
+
+.library-box {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* ================= METODOLOGÍA INFOGRÁFICA ================= */
+
+.metodologia {
+  width: 100%;
+}
+
+.met-header {
+  padding: 100px 20px;
+  text-align: center;
+  background: var(--negro);
+  color: white;
+}
+
+.met-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.met-header p {
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.85;
+}
+
+/* BLOQUES */
+
+.met-block {
+  position: relative;
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+}
+
+/* Overlay base */
+.met-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,.85),
+    rgba(0,0,0,.4)
+  );
+}
+
+/* Alternar dirección del overlay */
+.met-block:nth-child(even) .met-overlay {
+  background: linear-gradient(
+    to left,
+    rgba(0,0,0,.85),
+    rgba(0,0,0,.4)
+  );
+}
+
+/* Contenido */
+.met-content {
+  position: relative;
+  max-width: 600px;
+  color: white;
+  z-index: 2;
+}
+
+/* Alternar alineación */
+.met-block:nth-child(even) {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.met-block:nth-child(odd) {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.met-number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ff3b3b; /* rojo */
+  opacity: .8;
+}
+
+.met-content h3 {
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.met-content p {
+  line-height: 1.6;
+  opacity: .9;
+}
+/* ===============================
+   FOOTER
+================================ */
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.footer-icons a {
+  font-size: 22px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* HOVERS por red */
+.footer-icons a:hover {
+  transform: translateY(-4px);
+}
+
+.footer-icons a:hover .fa-whatsapp {
+  color: #25D366;
+}
+.footer-icons a:hover .fa-instagram {
+  color: #E1306C;
+}
+.footer-icons a:hover .fa-spotify {
+  color: #1DB954;
+}
+.footer-icons a:hover .fa-youtube {
+  color: #FF0000;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background:  url("hero22.jpg");
+  color: var(--blanco);
+}
