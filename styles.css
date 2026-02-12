@@ -34,6 +34,19 @@ body {
   color: var(--blanco);
   font-weight: 600;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.logo img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
 
 .btn {
   padding: 10px 20px;
