@@ -44,10 +44,13 @@
     <span>Hemiola y Síncopa</span>
   </div>
 
-  <nav>
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <nav id="nav-menu">
     <a href="#aprende">Aprende</a>
     <a href="#metodologia">Metodología</a>
-    <!-- Biblioteca quedará lista para enlazar luego -->
     <a href="biblioteca.html">Biblioteca</a>
   </nav>
 </header>
@@ -188,7 +191,13 @@
 
   <p>© 2026 Hemiola y Síncopa</p>
 </footer>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-menu');
 
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
-
