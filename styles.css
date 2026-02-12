@@ -28,7 +28,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: url("hero22.jpg") center / cover no-repeat;
+  background: url("hero22.jpg") bottom / cover no-repeat;
 }
 
 .navbar nav a {
@@ -298,3 +298,4 @@ footer {
     display: flex;
   }
 }
+
