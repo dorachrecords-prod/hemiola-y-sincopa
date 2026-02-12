@@ -238,7 +238,7 @@ body {
 footer {
   padding: 40px 20px;
   text-align: center;
-  background: url("hero22.jpg") center / cover no-repeat;
+  background: url("hero22.jpg") bottom / cover no-repeat;
 }
 
 .footer-icons {
@@ -298,5 +298,6 @@ footer {
     display: flex;
   }
 }
+
 
 
