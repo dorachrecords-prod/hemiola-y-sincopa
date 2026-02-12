@@ -262,3 +262,39 @@ footer {
 .footer-icons a:hover .fa-instagram { color: #E1306C; }
 .footer-icons a:hover .fa-spotify { color: #1DB954; }
 .footer-icons a:hover .fa-youtube { color: #FF0000; }
+
+/* ================= MENU RESPONSIVE ================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(0,0,0,0.95);
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar nav a {
+    margin: 10px 0;
+  }
+
+  .navbar nav.active {
+    display: flex;
+  }
+}
