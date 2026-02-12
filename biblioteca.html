@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca | Hemiola y Síncopa</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .campus-section {
+      padding: 80px 10%;
+      background: #111;
+      color: white;
+    }
+
+    .campus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .resource-card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.3s;
+      border: 1px solid #222;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      border-color: #c40000;
+    }
+
+    .resource-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 15px;
+      background: #c40000;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .download-btn:hover {
+      background: #0033a0;
+    }
+
+    .locked {
+      display: none;
+    }
+
+    .access-box {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .access-box input {
+      padding: 10px;
+      width: 200px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .access-box button {
+      padding: 10px 20px;
+      background: #0033a0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="logo-hs1.png" alt="Hemiola y Síncopa">
+    <span>Hemiola y Síncopa</span>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+  </nav>
+</header>
+
+<section class="campus-section">
+  <h1>Biblioteca Virtual</h1>
+  <p>Organizada como un campus de estudio.</p>
+
+  <!-- ================= PUBLICO ================= -->
+  <h2 style="margin-top:60px;">Recursos Públicos</h2>
+
+  <div class="campus-grid">
+
+    <div class="resource-card">
+      <h3>Introducción al Ritmo</h3>
+      <p>Guía básica para comprender pulso y subdivisión.</p>
+      <a href="pdfs/ritmo-basico.pdf" download class="download-btn">
+        <i class="fa-solid fa-download"></i> Descargar
+      </a>
+    </div>
+
+    <div class="resource-card">
+      <h3>Guía de Escalas</h3>
+      <p>Escalas mayores y menores explicadas.</p>
+      <a href="pdfs/guia-escalas.pdf" download class="download-btn">
+        <i class="fa-solid fa-download"></i> Descargar
+      </a>
+    </div>
+
+  </div>
+
+  <!-- ================= PRIVADO ================= -->
+  <h2 style="margin-top:80px;">Campus Estudiantes</h2>
+
+  <div class="access-box">
+    <p>Ingresa la contraseña para acceder al contenido exclusivo</p>
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="unlockContent()">Acceder</button>
+  </div>
+
+  <div id="private-content" class="locked">
+
+    <div class="campus-grid" style="margin-top:40px;">
+
+      <div class="resource-card">
+        <h3>Hemiola Avanzada</h3>
+        <p>Ejercicios progresivos aplicados.</p>
+        <a href="pdfs/hemiola-practica.pdf" download class="download-btn">
+          <i class="fa-solid fa-download"></i> Descargar
+        </a>
+      </div>
+
+      <div class="resource-card">
+        <h3>Armonía Funcional Completa</h3>
+        <p>Funciones tonales y progresiones aplicadas.</p>
+        <a href="pdfs/armonia-funcional.pdf" download class="download-btn">
+          <i class="fa-solid fa-download"></i> Descargar
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Hemiola y Síncopa</p>
+</footer>
+
+<script>
+  function unlockContent() {
+    const password = document.getElementById("password").value;
+    const privateContent = document.getElementById("private-content");
+
+    if (password === "hemiola2026") {
+      privateContent.style.display = "block";
+      alert("Acceso concedido 🎼");
+    } else {
+      alert("Contraseña incorrecta");
+    }
+  }
+</script>
+
+</body>
+</html>
