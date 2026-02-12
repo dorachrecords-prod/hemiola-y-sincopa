@@ -10,30 +10,48 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    .campus-section {
+
+    .library-hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url("hero-bg.jpg") center/cover no-repeat;
+      padding: 100px 10%;
+      text-align: center;
+      color: white;
+    }
+
+    .library-section {
       padding: 80px 10%;
       background: #111;
       color: white;
     }
 
-    .campus-grid {
+    .module {
+      margin-bottom: 80px;
+    }
+
+    .module h2 {
+      margin-bottom: 20px;
+      border-left: 5px solid #c40000;
+      padding-left: 15px;
+    }
+
+    .resource-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
-      margin-top: 40px;
     }
 
     .resource-card {
       background: #1a1a1a;
       padding: 25px;
       border-radius: 12px;
-      transition: 0.3s;
       border: 1px solid #222;
+      transition: 0.3s;
     }
 
     .resource-card:hover {
-      transform: translateY(-5px);
-      border-color: #c40000;
+      transform: translateY(-6px);
+      border-color: #0033a0;
     }
 
     .resource-card h3 {
@@ -55,31 +73,6 @@
       background: #0033a0;
     }
 
-    .locked {
-      display: none;
-    }
-
-    .access-box {
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .access-box input {
-      padding: 10px;
-      width: 200px;
-      border-radius: 5px;
-      border: none;
-      margin-right: 10px;
-    }
-
-    .access-box button {
-      padding: 10px 20px;
-      background: #0033a0;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
   </style>
 </head>
 
@@ -95,64 +88,79 @@
   </nav>
 </header>
 
-<section class="campus-section">
+<section class="library-hero">
   <h1>Biblioteca Virtual</h1>
-  <p>Organizada como un campus de estudio.</p>
+  <p>Recursos abiertos para estudiar música con estructura y profundidad.</p>
+</section>
 
-  <!-- ================= PUBLICO ================= -->
-  <h2 style="margin-top:60px;">Recursos Públicos</h2>
+<section class="library-section">
 
-  <div class="campus-grid">
+  <!-- MÓDULO 1 -->
+  <div class="module">
+    <h2>📘 Módulo 1 – Ritmo</h2>
 
-    <div class="resource-card">
-      <h3>Introducción al Ritmo</h3>
-      <p>Guía básica para comprender pulso y subdivisión.</p>
-      <a href="pdfs/ritmo-basico.pdf" download class="download-btn">
-        <i class="fa-solid fa-download"></i> Descargar
-      </a>
-    </div>
-
-    <div class="resource-card">
-      <h3>Guía de Escalas</h3>
-      <p>Escalas mayores y menores explicadas.</p>
-      <a href="pdfs/guia-escalas.pdf" download class="download-btn">
-        <i class="fa-solid fa-download"></i> Descargar
-      </a>
-    </div>
-
-  </div>
-
-  <!-- ================= PRIVADO ================= -->
-  <h2 style="margin-top:80px;">Campus Estudiantes</h2>
-
-  <div class="access-box">
-    <p>Ingresa la contraseña para acceder al contenido exclusivo</p>
-    <input type="password" id="password" placeholder="Contraseña">
-    <button onclick="unlockContent()">Acceder</button>
-  </div>
-
-  <div id="private-content" class="locked">
-
-    <div class="campus-grid" style="margin-top:40px;">
+    <div class="resource-grid">
 
       <div class="resource-card">
-        <h3>Hemiola Avanzada</h3>
-        <p>Ejercicios progresivos aplicados.</p>
-        <a href="pdfs/hemiola-practica.pdf" download class="download-btn">
-          <i class="fa-solid fa-download"></i> Descargar
-        </a>
-      </div>
-
-      <div class="resource-card">
-        <h3>Armonía Funcional Completa</h3>
-        <p>Funciones tonales y progresiones aplicadas.</p>
-        <a href="pdfs/armonia-funcional.pdf" download class="download-btn">
+        <h3>Ritmo Básico – Workbook</h3>
+        <p>Fundamentos de pulso, subdivisión y coordinación.</p>
+        <a href="pdfs/ritmo-basico.pdf" download class="download-btn">
           <i class="fa-solid fa-download"></i> Descargar
         </a>
       </div>
 
     </div>
+  </div>
 
+  <!-- MÓDULO 2 -->
+  <div class="module">
+    <h2>📗 Módulo 2 – Hemiola</h2>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <h3>Introducción a la Hemiola</h3>
+        <p>Concepto rítmico y aplicaciones prácticas.</p>
+        <a href="#" class="download-btn">
+          Próximamente
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MÓDULO 3 -->
+  <div class="module">
+    <h2>📙 Módulo 3 – Síncopa</h2>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <h3>Comprensión de la Síncopa</h3>
+        <p>Desplazamiento del acento y groove.</p>
+        <a href="#" class="download-btn">
+          Próximamente
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MÓDULO 4 -->
+  <div class="module">
+    <h2>📕 Módulo 4 – Armonía</h2>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <h3>Armonía Funcional</h3>
+        <p>Funciones tonales y progresiones.</p>
+        <a href="#" class="download-btn">
+          Próximamente
+        </a>
+      </div>
+
+    </div>
   </div>
 
 </section>
@@ -160,20 +168,6 @@
 <footer>
   <p>© 2026 Hemiola y Síncopa</p>
 </footer>
-
-<script>
-  function unlockContent() {
-    const password = document.getElementById("password").value;
-    const privateContent = document.getElementById("private-content");
-
-    if (password === "hemiola2026") {
-      privateContent.style.display = "block";
-      alert("Acceso concedido 🎼");
-    } else {
-      alert("Contraseña incorrecta");
-    }
-  }
-</script>
 
 </body>
 </html>
