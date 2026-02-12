@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- SEO básico -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
   <title>Hemiola y Síncopa | Formación Musical Integral</title>
   <meta name="description" content="Aprende teoría aplicada, ritmo, armonía y práctica real con una metodología viva y estructurada.">
 
-  <!-- Open Graph (WhatsApp, Facebook, Instagram) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Hemiola y Síncopa | Formación Musical Integral">
   <meta property="og:description" content="Comprende la música desde el sonido, el cuerpo y la aplicación directa.">
   <meta property="og:image" content="https://dorachrecords-prod.github.io/hemiola-y-sincopa/preview-share.jpg">
   <meta property="og:url" content="https://dorachrecords-prod.github.io/hemiola-y-sincopa/">
   <meta property="og:type" content="website">
 
-  <!-- Twitter / X -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Hemiola y Síncopa"> 
+  <meta name="twitter:title" content="Hemiola y Síncopa">
   <meta name="twitter:description" content="Formación musical práctica, clara y aplicada.">
   <meta name="twitter:image" content="https://dorachrecords-prod.github.io/hemiola-y-sincopa/preview-share.jpg">
-
 
   <!-- Tipografía -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Iconos -->
-  <script src="https://kit.fontawesome.com/a2e0e6ad95.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" sizes="64x64" href="logo-hs2.png">
-  <link rel="apple-touch-icon" href="logo-hs2.png">
-  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome (CDN estable) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="logo-hs2.png">
+  <link rel="apple-touch-icon" href="logo-hs2.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -44,23 +47,27 @@
   <nav>
     <a href="#aprende">Aprende</a>
     <a href="#metodologia">Metodología</a>
-    <a href="#biblioteca">Biblioteca</a>
+    <!-- Biblioteca quedará lista para enlazar luego -->
+    <a href="biblioteca.html">Biblioteca</a>
   </nav>
 </header>
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <h1>Hemiola y Síncopa</h1><br><br>
-  <div class="hero-buttons"><br><br>
-    <a href="#contacto" class="btn btn-red">Quiero aprender</a>
-    <a href="#metodologia" class="btn btn-blue">Ver metodología</a>
-  </div><br><br>
-    <h3><br><br>
-      Aprende música entendiendo lo que haces.<br><br>
-      Teoría, ritmo y armonía aplicados al instrumento,
-      sin fórmulas vacías ni confusión.<br><br>
-    </h3>
+  <div class="hero-content">
+    <h1>Hemiola y Síncopa</h1><br><br>
 
+    <p class="hero-description">
+      Aprende música entendiendo lo que haces.
+      Teoría, ritmo y armonía aplicados al instrumento,
+      sin fórmulas vacías ni confusión.
+    </p><br><br>
+
+    <div class="hero-buttons">
+      <a href="#contacto" class="btn btn-red">Quiero aprender</a>
+      <a href="#metodologia" class="btn btn-blue">Ver metodología</a>
+    </div>
+  </div>
 </section>
 
 <!-- ================= APRENDE ================= -->
@@ -93,18 +100,17 @@
 <!-- ================= METODOLOGÍA ================= -->
 <section class="metodologia" id="metodologia">
 
-<div class="met-header" style="background-image: url('hero23.jpg');">
-  <div class="met-header-overlay"></div>
-
-  <div class="met-header-content">
-    <h2>Nuestra Metodología</h2>
-    <p>
-      Enseñamos música para comprender, sentir y aplicar, en lugar de solo memorizar.
-    </p>
+  <div class="met-header" style="background-image: url('hero23.jpg');">
+    <div class="met-header-overlay"></div>
+    <div class="met-header-content">
+      <h2>Nuestra Metodología</h2>
+      <p>
+        Enseñamos música para comprender, sentir y aplicar,
+        en lugar de solo memorizar.
+      </p>
+    </div>
   </div>
-</div>
 
-  <!-- BLOQUE 1 -->
   <div class="met-block" style="background-image: url('hero1.jpg');">
     <div class="met-overlay"></div>
     <div class="met-content">
@@ -118,7 +124,6 @@
     </div>
   </div>
 
-  <!-- BLOQUE 2 -->
   <div class="met-block" style="background-image: url('hero2.jpg');">
     <div class="met-overlay"></div>
     <div class="met-content">
@@ -132,7 +137,6 @@
     </div>
   </div>
 
-  <!-- BLOQUE 3 -->
   <div class="met-block" style="background-image: url('hero3.jpg');">
     <div class="met-overlay"></div>
     <div class="met-content">
@@ -146,14 +150,12 @@
     </div>
   </div>
 
-  <!-- BLOQUE 4 -->
   <div class="met-block" style="background-image: url('hero4.jpg');">
     <div class="met-overlay"></div>
     <div class="met-content">
       <span class="met-number">04</span>
       <h3>Construcción progresiva</h3>
       <p>
-        No acumulamos información.
         Construimos estructuras sólidas
         desde lo simple hacia lo complejo.
       </p>
@@ -163,26 +165,29 @@
 </section>
 
 <!-- ================= CONTACTO ================= -->
-<footer>
+<footer id="contacto">
   <div class="footer-icons">
-    <a href="https://wa.me/573008884574" target="_blank" aria-label="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
+
+    <a href="https://wa.me/573008884574" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <a href="https://open.spotify.com/intl-es/artist/5wLC5Pli1mpDRD9GbUensD" target="_blank" aria-label="Spotify">
-	  <i class="fab fa-spotify"></i>
-    </a>
-    
-	<a href="https://www.instagram.com/hemiolaysicopaac/" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
+    <a href="https://open.spotify.com/intl-es/artist/5wLC5Pli1mpDRD9GbUensD" target="_blank" rel="noopener" aria-label="Spotify">
+      <i class="fa-brands fa-spotify"></i>
     </a>
 
-    <a href="https://youtube.com/@focaaraquemusic?si=ck8RQLOKShFSJMnP" target="_blank" aria-label="YouTube">
-      <i class="fab fa-youtube"></i>
+    <a href="https://www.instagram.com/hemiolaysicopaac/" target="_blank" rel="noopener" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
     </a>
+
+    <a href="https://youtube.com/@focaaraquemusic" target="_blank" rel="noopener" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+
   </div>
 
-  <p>© Hemiola y Sincopa</p>
+  <p>© 2026 Hemiola y Síncopa</p>
 </footer>
+
 </body>
 </html>
