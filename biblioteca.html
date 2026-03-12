@@ -1,173 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblioteca | Hemiola y Síncopa</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
+<title>Biblioteca | Hemiola y Síncopa</title>
 
-    .library-hero {
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                  url("hero7.jpg") center/cover no-repeat;
-      padding: 100px 10%;
-      text-align: center;
-      color: white;
-    }
+<link rel="stylesheet" href="stylesbiblioteca.css">
 
-    .library-section {
-      padding: 80px 10%;
-      background: #111;
-      color: white;
-    }
-
-    .module {
-      margin-bottom: 80px;
-    }
-
-    .module h2 {
-      margin-bottom: 20px;
-      border-left: 5px solid #c40000;
-      padding-left: 15px;
-    }
-
-    .resource-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .resource-card {
-      background: #1a1a1a;
-      padding: 25px;
-      border-radius: 12px;
-      border: 1px solid #222;
-      transition: 0.3s;
-    }
-
-    .resource-card:hover {
-      transform: translateY(-6px);
-      border-color: #0033a0;
-    }
-
-    .resource-card h3 {
-      margin-bottom: 10px;
-    }
-
-    .download-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 8px 15px;
-      background: #c40000;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .download-btn:hover {
-      background: #0033a0;
-    }
-
-  </style>
 </head>
 
 <body>
 
-<header class="navbar">
-  <div class="logo">
-    <img src="logo-hs1.png" alt="Hemiola y Síncopa">
-    <span>Hemiola y Síncopa</span>
-  </div>
-  <nav>
-    <a href="index.html">Inicio</a>
-  </nav>
-</header>
+<div id="login">
 
-<section class="library-hero">
-  <h1>Biblioteca Virtual</h1>
-  <p>Recursos abiertos para estudiar música con estructura y profundidad.</p>
-</section>
+<h2>Biblioteca privada</h2>
 
-<section class="library-section">
+<p>Acceso exclusivo para estudiantes.</p>
 
-  <!-- MÓDULO 1 -->
-  <div class="module">
-    <h2>📘 Módulo 1 – Ritmo</h2>
+<input type="password" id="password" placeholder="Contraseña">
 
-    <div class="resource-grid">
+<button onclick="checkPassword()">Entrar</button>
 
-      <div class="resource-card">
-        <h3>Ritmo Básico – Workbook</h3>
-        <p>Fundamentos de pulso, subdivisión y coordinación.</p>
-        <a href="pdfs/ritmo-basico.pdf" download class="download-btn">
-          <i class="fa-solid fa-download"></i> Descargar
-        </a>
-      </div>
+</div>
 
-    </div>
-  </div>
+<div id="library" style="display:none">
 
-  <!-- MÓDULO 2 -->
-  <div class="module">
-    <h2>📗 Módulo 2 – Hemiola</h2>
+<h1>Biblioteca Hemiola y Síncopa</h1>
 
-    <div class="resource-grid">
+<div class="resource-card">
 
-      <div class="resource-card">
-        <h3>Introducción a la Hemiola</h3>
-        <p>Concepto rítmico y aplicaciones prácticas.</p>
-        <a href="#" class="download-btn">
-          Próximamente
-        </a>
-      </div>
+<h3>Ritmo Básico – Workbook</h3>
 
-    </div>
-  </div>
+<a href="pdfs/ritmo-basico.pdf">Descargar</a>
 
-  <!-- MÓDULO 3 -->
-  <div class="module">
-    <h2>📙 Módulo 3 – Síncopa</h2>
+</div>
 
-    <div class="resource-grid">
+</div>
 
-      <div class="resource-card">
-        <h3>Comprensión de la Síncopa</h3>
-        <p>Desplazamiento del acento y groove.</p>
-        <a href="#" class="download-btn">
-          Próximamente
-        </a>
-      </div>
+<script>
 
-    </div>
-  </div>
+function checkPassword(){
 
-  <!-- MÓDULO 4 -->
-  <div class="module">
-    <h2>📕 Módulo 4 – Armonía</h2>
+let pass = document.getElementById("password").value
 
-    <div class="resource-grid">
+if(pass === "hemiola2026"){
 
-      <div class="resource-card">
-        <h3>Armonía Funcional</h3>
-        <p>Funciones tonales y progresiones.</p>
-        <a href="#" class="download-btn">
-          Próximamente
-        </a>
-      </div>
+document.getElementById("login").style.display="none"
+document.getElementById("library").style.display="block"
 
-    </div>
-  </div>
+}
 
-</section>
+else{
 
-<footer>
-  <p>© 2026 Hemiola y Síncopa</p>
-</footer>
+alert("Contraseña incorrecta")
+
+}
+
+}
+
+</script>
 
 </body>
 </html>
