@@ -1,0 +1,33 @@
+body{
+
+background:#111;
+color:white;
+font-family:Montserrat;
+text-align:center;
+padding:60px;
+
+}
+
+input{
+
+padding:10px;
+margin:10px;
+
+}
+
+button{
+
+padding:10px 20px;
+background:#c62828;
+color:white;
+border:none;
+
+}
+
+.resource-card{
+
+margin-top:40px;
+border:1px solid #333;
+padding:30px;
+
+}
