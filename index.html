@@ -6,32 +6,238 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Biblioteca | Hemiola y Síncopa</title>
+<title>Hemiola y Síncopa | Formación Musical Integral</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Ritmo, Melodía y Armonía aplicados a la vida a través de tu instrumento.">
 
-<link rel="stylesheet" href="stylesbiblioteca.css">
+<link rel="icon" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
+<header class="navbar">
 
-<!-- LOGIN -->
+<div class="logo">
 
-<section class="login-screen" id="login">
+<img src="logo-hs1.png">
+<span>Hemiola y Síncopa</span>
 
-<div class="login-card">
+</div>
 
-<h2>Biblioteca privada</h2>
+<div class="menu-toggle" id="menu-toggle">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav id="nav-menu">
+
+<a href="#aprende">Aprende</a>
+<a href="#paraquien">¿Para quién?</a>
+<a href="#metodologia">Metodología</a>
+<a href="#biblioteca">Biblioteca</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero section">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>Hemiola y Síncopa</h1>
+
+<div class="hero-line"></div>
+
+<p class="hero-description">
+Ritmo, Melodía y Armonía aplicados a la vida a través de tu instrumento.
+</p>
+
+<p class="hero-sub">
+Formación musical basada en comprensión, escucha y aplicación real.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contacto" class="btn btn-red">
+Quiero aprender
+</a>
+
+<a href="#metodologia" class="btn btn-blue">
+Ver metodología
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- APRENDIZAJE -->
+
+<section class="section" id="aprende">
+
+<div class="container">
+
+<h2>¿Qué puedes aprender?</h2>
 
 <div class="line"></div>
 
-<p>Acceso exclusivo para estudiantes de Hemiola y Síncopa.</p>
+<div class="cards">
 
-<input type="password" id="password" placeholder="Contraseña">
+<div class="card">
+<h3>🎹 Teoría aplicada</h3>
+<p>Comprende la música desde el sonido.</p>
+</div>
 
-<button onclick="checkPassword()">Entrar</button>
+<div class="card">
+<h3>🥁 Ritmo y pulso</h3>
+<p>Interioriza el tiempo musical desde el cuerpo.</p>
+</div>
+
+<div class="card">
+<h3>🎼 Armonía funcional</h3>
+<p>Conecta la teoría con el instrumento.</p>
+</div>
+
+<div class="card">
+<h3>🎸 Aplicación directa</h3>
+<p>Todo se aprende tocando.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PARA QUIÉN -->
+
+<section class="section para-quien" id="paraquien">
+
+<div class="container">
+
+<h2>¿Para quién es esta formación?</h2>
+
+<div class="line"></div>
+
+<div class="cards">
+
+<div class="card">
+Músicos autodidactas que quieren comprender lo que tocan
+</div>
+
+<div class="card">
+Estudiantes que desean fortalecer su base musical
+</div>
+
+<div class="card">
+Instrumentistas que quieren desarrollar su ritmo interior
+</div>
+
+<div class="card">
+Personas que desean vivir la música con profundidad
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- METODOLOGÍA -->
+
+<section class="metodologia section" id="metodologia">
+
+<div class="met-header">
+
+<div class="met-header-overlay"></div>
+
+<div class="met-header-content">
+
+<h2>Nuestra Metodología</h2>
+
+<div class="line"></div>
+
+<p>
+
+La mayoría de la enseñanza musical se basa en memorizar.
+Nuestra metodología parte del sonido, el cuerpo
+y la aplicación real en el instrumento.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="met-block">
+
+<div class="met-overlay"></div>
+
+<div class="met-content">
+
+<span class="met-number">01</span>
+
+<h3>Escuchar antes de explicar</h3>
+
+<p>
+Todo inicia desde el sonido real.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="met-block">
+
+<div class="met-overlay"></div>
+
+<div class="met-content">
+
+<span class="met-number">02</span>
+
+<h3>El cuerpo como metrónomo</h3>
+
+<p>
+El ritmo se camina, se respira y se interioriza.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="met-block">
+
+<div class="met-overlay"></div>
+
+<div class="met-content">
+
+<span class="met-number">03</span>
+
+<h3>Concepto y aplicación</h3>
+
+<p>
+Cada concepto aprendido se aplica en el instrumento.
+</p>
+
+</div>
 
 </div>
 
@@ -40,116 +246,95 @@
 
 <!-- BIBLIOTECA -->
 
-<section class="library-screen" id="library">
+<section class="section biblioteca-preview" id="biblioteca">
 
 <div class="container">
 
-<h1>Biblioteca Hemiola y Síncopa</h1>
+<h2>Biblioteca Exclusiva para Estudiantes</h2>
 
 <div class="line"></div>
 
-<p class="library-description">
+<p class="biblioteca-text">
 
-Materiales de estudio desarrollados dentro de la
+Los estudiantes acceden a una biblioteca privada con libros,
+ejercicios y materiales desarrollados dentro de la
 metodología Hemiola y Síncopa.
 
 </p>
 
+<div class="library-cards">
 
-<div class="library-grid">
+<div class="library-card">📘 Workbooks de Ritmo</div>
+<div class="library-card">📗 Estudios de Hemiola</div>
+<div class="library-card">📙 Estudios de Síncopa</div>
+<div class="library-card">📕 Armonía Funcional</div>
 
+</div>
 
-<div class="resource-card">
-
-<h3>Ritmo Básico – Workbook</h3>
-
-<p>
-Ejercicios fundamentales para desarrollar
-pulso, subdivisión y lectura rítmica.
-</p>
-
-<a href="pdfs/ritmo-basico.pdf" target="_blank">
-Descargar PDF
+<a href="biblioteca.html" class="btn btn-red">
+Acceso estudiantes
 </a>
-
-</div>
-
-
-
-<!-- FUTUROS RECURSOS -->
-
-<div class="resource-card">
-
-<h3>Estudios de Hemiola</h3>
-
-<p>
-Material práctico para comprender
-y aplicar la hemiola en distintos contextos.
-</p>
-
-<span class="coming">Próximamente</span>
-
-</div>
-
-
-<div class="resource-card">
-
-<h3>Estudios de Síncopa</h3>
-
-<p>
-Exploración rítmica basada en desplazamientos
-y acentos fuera del pulso principal.
-</p>
-
-<span class="coming">Próximamente</span>
-
-</div>
-
-
-<div class="resource-card">
-
-<h3>Armonía Funcional</h3>
-
-<p>
-Ejercicios y ejemplos aplicados
-a la práctica instrumental.
-</p>
-
-<span class="coming">Próximamente</span>
-
-</div>
-
-
-</div>
 
 </div>
 
 </section>
 
 
+<!-- CTA FINAL -->
 
-<script>
+<section class="section cta-final">
 
-function checkPassword(){
+<div class="container">
 
-let pass = document.getElementById("password").value
+<h2>
+La música se comprende cuando se vive.
+</h2>
 
-if(pass === "hemiola2026"){
+<p>
+Si deseas estudiar ritmo, melodía y armonía
+desde la práctica real del instrumento,
+puedes comenzar aquí.
+</p>
 
-document.getElementById("login").style.display="none"
-document.getElementById("library").style.display="block"
+<a href="#contacto" class="btn btn-red">
+Quiero estudiar
+</a>
 
-}
+</div>
 
-else{
+</section>
 
-alert("Contraseña incorrecta")
 
-}
+<!-- FOOTER -->
 
-}
+<footer id="contacto">
 
-</script>
+<div class="footer-icons">
+
+<a href="https://wa.me/573008884574">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="https://open.spotify.com/intl-es/artist/6OC6faNKQPNOrkggu9lEKI">
+<i class="fa-brands fa-spotify"></i>
+</a>
+
+<a href="https://www.instagram.com/hemiolaysincopaac">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.youtube.com/@hemiolaysincopaac">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+</div>
+
+<p>© 2026 Hemiola y Síncopa</p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
