@@ -8,17 +8,26 @@
 
 <title>Biblioteca | Hemiola y Síncopa</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="stylesbiblioteca.css">
 
 </head>
 
 <body>
 
-<div id="login">
+
+<!-- LOGIN -->
+
+<section class="login-screen" id="login">
+
+<div class="login-card">
 
 <h2>Biblioteca privada</h2>
 
-<p>Acceso exclusivo para estudiantes.</p>
+<div class="line"></div>
+
+<p>Acceso exclusivo para estudiantes de Hemiola y Síncopa.</p>
 
 <input type="password" id="password" placeholder="Contraseña">
 
@@ -26,19 +35,98 @@
 
 </div>
 
-<div id="library" style="display:none">
+</section>
+
+
+<!-- BIBLIOTECA -->
+
+<section class="library-screen" id="library">
+
+<div class="container">
 
 <h1>Biblioteca Hemiola y Síncopa</h1>
+
+<div class="line"></div>
+
+<p class="library-description">
+
+Materiales de estudio desarrollados dentro de la
+metodología Hemiola y Síncopa.
+
+</p>
+
+
+<div class="library-grid">
+
 
 <div class="resource-card">
 
 <h3>Ritmo Básico – Workbook</h3>
 
-<a href="pdfs/ritmo-basico.pdf">Descargar</a>
+<p>
+Ejercicios fundamentales para desarrollar
+pulso, subdivisión y lectura rítmica.
+</p>
+
+<a href="pdfs/ritmo-basico.pdf" target="_blank">
+Descargar PDF
+</a>
+
+</div>
+
+
+
+<!-- FUTUROS RECURSOS -->
+
+<div class="resource-card">
+
+<h3>Estudios de Hemiola</h3>
+
+<p>
+Material práctico para comprender
+y aplicar la hemiola en distintos contextos.
+</p>
+
+<span class="coming">Próximamente</span>
+
+</div>
+
+
+<div class="resource-card">
+
+<h3>Estudios de Síncopa</h3>
+
+<p>
+Exploración rítmica basada en desplazamientos
+y acentos fuera del pulso principal.
+</p>
+
+<span class="coming">Próximamente</span>
+
+</div>
+
+
+<div class="resource-card">
+
+<h3>Armonía Funcional</h3>
+
+<p>
+Ejercicios y ejemplos aplicados
+a la práctica instrumental.
+</p>
+
+<span class="coming">Próximamente</span>
+
+</div>
+
 
 </div>
 
 </div>
+
+</section>
+
+
 
 <script>
 
@@ -65,4 +153,3 @@ alert("Contraseña incorrecta")
 
 </body>
 </html>
-
