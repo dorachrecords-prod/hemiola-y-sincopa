@@ -100,7 +100,7 @@ font-size:15px;
 
 .hero{
 
-min-height:90vh;
+min-height:90svh;
 
 display:flex;
 align-items:center;
@@ -108,9 +108,11 @@ justify-content:center;
 
 text-align:center;
 
-background:url("hero.jpg");
+background:url("hero22.jpg");
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
+background-attachment:scroll;
 
 position:relative;
 
@@ -303,6 +305,8 @@ height:320px;
 
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
+background-attachment:scroll;
 
 display:flex;
 align-items:center;
@@ -349,6 +353,8 @@ position:relative;
 
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
+background-attachment:scroll;
 
 }
 
@@ -393,6 +399,11 @@ margin-bottom:10px;
 
 background:#111;
 
+background-image:url('hero23.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:scroll;
 }
 
 .biblioteca-text{
@@ -483,6 +494,11 @@ background:black;
 
 border-top:1px solid #111;
 
+background-image:url('hero22.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:scroll;
 }
 
 .footer-icons{
