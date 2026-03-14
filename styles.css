@@ -62,7 +62,7 @@ align-items:center;
 
 padding:20px 40px;
 
-background:url("hero22.jpg");
+background:black;
 
 position:sticky;
 top:0;
@@ -108,7 +108,7 @@ justify-content:center;
 
 text-align:center;
 
-background:url("hero.jpg");
+background:url("hero22.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -332,6 +332,17 @@ padding:20px;
 
 }
 
+.met-header h2 {
+font-size: 48px;
+margin-bottom: 20px;
+color: white;
+}
+
+.met-header p {
+font-size: 18px;
+color: white;
+}
+
 .met-block{
 
 height:auto;
@@ -347,6 +358,7 @@ background-position:center;
 background-repeat:no-repeat;
 background-attachment:scroll;
 
+transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .met-overlay{
@@ -382,6 +394,27 @@ display:block;
 
 margin-bottom:10px;
 
+}
+
+.met-block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.met-content h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.met-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+}
+
+.met-content p {
+  opacity: .85;
 }
 
 /* BIBLIOTECA */
