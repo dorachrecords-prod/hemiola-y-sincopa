@@ -285,15 +285,7 @@ background:rgba(0,0,0,.65);
 
 }
 
-/* PARA QUIEN */
-
-.para-quien{
-
-background:#0b0b0b;
-
-}
-
-/* METODOLOGIA */
+/* METODOLOGÍA */
 
 .metodologia{
 width:100%;
@@ -301,7 +293,7 @@ width:100%;
 
 .met-header{
 
-height:320px;
+min-height:320px;
 
 background-size:cover;
 background-position:center;
@@ -315,7 +307,6 @@ justify-content:center;
 text-align:center;
 
 position:relative;
-
 }
 
 .met-header-overlay{
@@ -343,7 +334,7 @@ padding:20px;
 
 .met-block{
 
-height:280px;
+height:auto;
 
 display:flex;
 align-items:center;
@@ -454,34 +445,6 @@ background:rgba(0,0,0,.8);
 
 }
 
-/* CTA FINAL */
-
-.cta-final{
-
-background:#111;
-
-}
-
-.cta-final h2{
-
-font-size:34px;
-
-margin-bottom:20px;
-
-}
-
-.cta-final p{
-
-max-width:600px;
-
-margin:auto;
-
-margin-bottom:30px;
-
-opacity:.9;
-
-}
-
 /* FOOTER */
 
 footer{
@@ -582,38 +545,3 @@ font-size:36px;
 
 }
 
-/* SCROLL REVEAL */
-
-.hidden{
-
-opacity:0;
-
-transform:translateY(50px);
-
-transition:all .8s ease;
-
-}
-
-.visible{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-/* FLOATING CARDS */
-
-.float{
-
-animation:float 6s ease-in-out infinite;
-
-}
-
-@keyframes float{
-
-0%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
-100%{transform:translateY(0);}
-
-}
