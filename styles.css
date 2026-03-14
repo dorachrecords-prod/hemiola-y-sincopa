@@ -62,7 +62,7 @@ align-items:center;
 
 padding:20px 40px;
 
-background:black;
+background:url("hero22.jpg");
 
 position:sticky;
 top:0;
@@ -108,7 +108,7 @@ justify-content:center;
 
 text-align:center;
 
-background:url("hero22.jpg");
+background:url("hero.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -449,7 +449,7 @@ background:rgba(0,0,0,.8);
 
 footer{
 
-padding:70px 20px;
+padding:50px 20px;
 
 text-align:center;
 
