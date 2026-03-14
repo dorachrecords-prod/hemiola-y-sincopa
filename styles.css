@@ -285,170 +285,83 @@ background:rgba(0,0,0,.65);
 
 }
 
-/* METODOLOGÍA */
+/* ================= METODOLOGÍA ================= */
 
-.metodologia{
-width:100%;
+.met-header {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
 }
 
-.met-header{
-
-min-height:320px;
-
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-background-attachment:scroll;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-text-align:center;
-
-position:relative;
+.met-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
 }
 
-.met-header-overlay{
-
-position:absolute;
-
-top:0;
-left:0;
-right:0;
-bottom:0;
-
-background:rgba(0,0,0,.75);
-
+.met-header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
 }
 
-.met-header-content{
-
-position:relative;
-
-max-width:700px;
-
-padding:20px;
-
+.met-header-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-.met-header h2 {
-font-size: 48px;
-margin-bottom: 20px;
-color: white;
+.met-block {
+  position: relative;
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
 }
 
-.met-header p {
-font-size: 18px;
-color: white;
+.met-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,.85), rgba(0,0,0,.4));
 }
 
-/* METODOLOGÍA - BLOQUES GRANDES DESDE EL INICIO */
-
-.met-block{
-  min-height:70svh;     /* Altura mínima grande sin necesidad de hover */
-  padding:80px 30px;    /* Espacio superior e inferior amplio */
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  position:relative;
-
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  background-attachment:scroll;
-
-  transition:box-shadow 0.3s ease;
+.met-block:nth-child(even) .met-overlay {
+  background: linear-gradient(to left, rgba(0,0,0,.85), rgba(0,0,0,.4));
 }
 
-.met-content{
-  position:relative;
-  text-align:center;
-  max-width:700px;
-  padding:20px;
-  background:rgba(0,0,0,0.4); /* Panel semitransparente */
-  border-radius:12px;
+.met-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
 }
 
-.met-content h3{
-  font-size:2.4rem;
-  margin-bottom:15px;
-  color:white;
+.met-block:nth-child(even) {
+  justify-content: flex-end;
+  text-align: right;
 }
 
-.met-content p{
-  font-size:1.15rem;
-  line-height:1.7;
-  color:white;
-  opacity:.9;
+.met-block:nth-child(odd) {
+  justify-content: flex-start;
+  text-align: left;
 }
 
-/* Hover solo para sombreado (no escala) */
-.met-block:hover{
-  box-shadow:0 10px 35px rgba(0,0,0,.4);
-}
-
-/* Hover visual */
-.met-block:hover{
-  transform:scale(1.02);
-  box-shadow:0 10px 35px rgba(0,0,0,.4);
-}
-
-.met-overlay{
-
-position:absolute;
-
-top:0;
-left:0;
-right:0;
-bottom:0;
-
-background:rgba(0,0,0,.6);
-
-}
-
-.met-content{
-
-position:relative;
-
-text-align:center;
-
-max-width:600px;
-
-}
-
-.met-number{
-
-font-size:40px;
-
-color:var(--azul);
-
-display:block;
-
-margin-bottom:10px;
-
-}
-
-.met-block:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+.met-number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--rojo);
+  opacity: .8;
 }
 
 .met-content h3 {
-  font-size: 32px;
-  margin-bottom: 15px;
-  color: white;
-}
-
-.met-content p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: white;
-}
-
-.met-content p {
-  opacity: .85;
+  font-size: 1.8rem;
+  margin: 20px 0;
 }
 
 /* BIBLIOTECA */
